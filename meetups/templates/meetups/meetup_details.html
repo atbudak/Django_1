@@ -1,0 +1,39 @@
+{% extends 'meetups/base/base.html' %}
+
+{% load static %}
+
+    <title>{% block title %} {{ meetup_title }} {% endblock %}</title>
+    {% block site_css %}
+        <link rel="stylesheet" href="{% static 'meetups/styles/all-meetup.css' %}">
+    {% endblock %}
+
+
+    {% block header_link %}
+        <a href="/meetups" id="main-logo">DJango Meet Ups</a>
+        <h3>{{meetup_title}}</h3>
+    {% endblock %}
+    {% block body %}
+    {% if meetup_found %}
+
+        <article>
+            <img src="" alt="">
+            <section id="location">
+                <h2>Meetup Location</h2>
+                <address>This meetup takes us <span>LOCATION</span>(ADRESS).</address>
+            </section>
+            <section id="details">
+                <h2>What's This Meetup About?</h2>
+                <p>{{ meetup_description }}</p>
+            </section>
+            <footer>
+                <p>Need more details? Please <a href="" class="footer_link">contact organizer</a>(but don't spam :))</p>
+            </footer>
+            <section id="registration">
+                <h2>Join Us!</h2>
+                FORM
+            </section>
+        </article>
+    {% else %}
+        <p style="text-align:center"> <b> Article Not Found For This Slug! </b></p>
+    {% endif %}
+    {% endblock %}

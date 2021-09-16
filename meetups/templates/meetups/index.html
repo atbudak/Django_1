@@ -1,0 +1,29 @@
+{% extends  'meetups/base/base.html' %}
+
+{% load static %}
+
+    {% block title %} All Meetups {% endblock %}
+    {% block site_css %}
+        <link rel="stylesheet" href="{% static 'meetups/styles/all-meetup.css' %}">
+    {% endblock %}
+
+      {% block header %}
+        We got great metups coming up!
+      {% endblock %}
+      {% block content %}
+        Find the one best suits your needs!
+      {% endblock %}
+
+    {% block header_link %}
+        <a href="/meetups" id="main-logo">DJango Meet Ups</a>
+    {% endblock %}
+    {% block body %}
+        <section>
+            <h2>Upcoming Meetups</h2>
+            <ol>
+            {% for item in meetups %}
+                {% include 'meetups/includes/meetup-items.html' with title=item.title location='New York' slug=item.slug image=item.image.url %}
+            {% endfor %}
+            </ol>
+        </section>
+    {% endblock %}
