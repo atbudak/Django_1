@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2666066d-2c43-4f82-958c-9117d2bf14f1" name="Changes" comment="secret key" />
+    <list default="true" id="2666066d-2c43-4f82-958c-9117d2bf14f1" name="Changes" comment="secret key">
+      <change afterPath="$PROJECT_DIR$/meetups/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meetups/static/meetups/styles/registration-confirmation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/meetups/templates/meetups/registration-success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetups/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/meetups/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetups/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/meetups/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetups/templates/meetups/meetup_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/meetups/templates/meetups/meetup_details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetups/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/meetups/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meetups/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/meetups/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/image_5.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +89,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="secret key" />
